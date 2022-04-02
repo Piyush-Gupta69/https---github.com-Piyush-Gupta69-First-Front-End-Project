@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE PIECE</title>
+    <link href='https://css.gg/heart.css' rel='stylesheet'>
+    <link href='https://css.gg/profile.css' rel='stylesheet'>
+    <link href='https://css.gg/dollar.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset */
+        body {
+
+            margin: 0px;
+            padding: 0px;
+            background: url(img/op.jpg);
+            background-size: cover;
+            /* background-repeat: no-repeat;
+            background: fixed 100% 100%;
+            background-size: 100%; */
+            color: black;
+        }
+
+        * {
+            font-family: 'Fruktur', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 11px;
+            left: 11px;
+
+        }
+
+        .left img {
+            width: 200px;
+            height: 60px;
+        }
+
+        .mid {
+            border: 2px solid magenta;
+            display: block;
+            width: 50%;
+            margin: 11px auto;
+        }
+
+        .right {
+            border: 2px solid red;
+            display: inline-block;
+            position: absolute;
+            top: 11px;
+            right: 11px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: #f7fb05;
+            text-decoration: none;
+            padding: 30px 21px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            font-weight: bolder;
+            color: brown;
+
+        }
+
+        .btn {
+            border: 4px groove black;
+            color: #f7fb05;
+            background-color: brown;
+            margin: 0px 10px;
+            padding: 4px 14px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: large;
+        }
+
+        .btn:hover {
+            background-color: burlywood;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 23px;
+            font-size: 22px;
+            font-weight: bolder;
+            color: #f7fb05;
+        }
+
+        .container {
+            border: 2px solid #f7fb05;
+            margin: 150px 44px;
+            padding: 75px;
+            border-radius: 29px;
+            width: 41%;
+        }
+
+        .formgroup input {
+            text-align: center;
+            margin: 5px 5px;
+            padding: 5px 5px;
+            width: 40%;
+            border: 5px solid #f7fb05;
+        }
+
+        h1 {
+            color: #f7fb05;
+        }
+
+        #butt {
+            margin: 15px 75px;
+        }
+
+        .fa {
+            position: absolute;
+            font-size: 25px;
+            top: 438px;
+            left: 96px;
+            color: #f7fb05;
+        }
+
+        .gg-dollar {
+            color: #f7fb05;
+            position: absolute;
+            font-size: 25px;
+            top: 532px;
+            left: 103px;
+        }
+        .gg-profile{
+            color: #f7fb05;
+            position: absolute;
+            font-size: 25px;
+            top: 385px;
+            left: 95px;
+        }
+        .gg-heart{
+            color: #f7fb05;
+            position: absolute;
+            font-size: 25px;
+            top: 490px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/log.jpg" alt="">
+            <div>
+                ワンピース
+            </div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"><b>Home</b></a></li>
+                <li><a href="https://gogoanime.run/category/one-piece" target="_blank"><b>Watch Anime</b></a></li>
+                <li><a href="https://w13.mangafreak.net/Manga/One_Piece" target="_blank"><b>Read Manga</b></a></li>
+                <li><a href="https://onepiece.fandom.com/wiki/One_Piece_Wiki" target="_blank"><b>Wiki</b></a></li>
+                <li><a href="#"><b>Contact Us</b></a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Share</button>
+            <button class="btn">Rate Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN the Straw Hat Pirate Crew!!!!</h1>
+        <form action="backend.php">
+            <div class="formgroup"> <i class="gg-profile"></i><input type="text" id="name" placeholder="Enter Your Name"></div>
+            <div class="formgroup"> <i class="fa">&#xf095;</i><input type="number" id="name"
+                    placeholder="Den-Den Mushi no."></div>
+            <div class="formgroup"> <i class="gg-heart"></i><input type="text" id="name" placeholder="Favourite Straw Hat"></div>
+            <div class="formgroup"> <i class="gg-dollar"></i><input type="number" id="name" placeholder="Bounty"></div>
+            <button class="btn" id="butt">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
